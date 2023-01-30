@@ -7,9 +7,25 @@ const Navbar =()=>{
     const scroller =()=>{
             let contact = document.querySelector('.form');
             contact.scrollIntoView({behavior: 'smooth'});
-    }
+        }
+
+        const [active, setActive] = useState("nav");
+        const [icon, setIcon] = useState("nav__toggler");
+        const navToggle = () => {
+            active === 'nav' ? setActive('nav nav_active'): setActive('nav')
+            icon === 'nav__toggler' ?  setIcon("nav__toggler toggle"): setIcon("nav__toggler");
+        };
+
     return(
-        <div className="nav">
+        <div className={active}>
+            <div onClick={navToggle} className="navButton">
+				<div className="lines">
+					<div className="line item1" id="line"></div>
+					<div className="line item2" id="line"></div>
+					<div className="line item3" id="line"></div>
+				</div>
+			</div>
+
             <ul>
                 <li>
 						<Link to={"/"}>STRONA GŁÓWNA</Link>
@@ -23,7 +39,7 @@ const Navbar =()=>{
                     <li>
 						<Link to={"/audi"}>AUDI</Link>
 					</li>
-					<li id="contactBtn" onClick={scroller}><Link style={{color: "rgb(255, 0, 0)"}}>KONTAKT</Link></li>
+					<li id="contactBtn" onClick={scroller}><Link style={{color: "rgb(128, 0, 0)"}}>KONTAKT</Link></li>
             </ul>
         </div>
     )

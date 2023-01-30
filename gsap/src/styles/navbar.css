@@ -1,6 +1,6 @@
 .nav{
     z-index: 2;
-    background: white;
+    background: rgb(10, 10, 10);
     width: 100%;
     height: 70px;
     position: fixed;
@@ -19,7 +19,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 17px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .nav a::after{
@@ -28,7 +28,7 @@
 	width: 0;
 	height: 2px;
     border-radius: 2px;
-	background: rgb(255, 0, 0);
+	background: rgb(128, 0, 0);
 	transition: width 0.3s ease-in-out;
     text-align: center;
     position: relative;
@@ -41,11 +41,81 @@
 
 .nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+}
+
+.line {
+	width: 35px;
+	height: 4px;
+	background: rgb(197, 197, 197);
+	transition: 0.4s;
+}
+
+.item3 {
+	width: 20px;
+}
+
+.navButton:hover .item3 {
+	width: 30px;
+}
+
+.xButton .item2 {
+	display: none;
+}
+
+.xButton .item1 {
+	transform: rotate(45deg);
+	margin-top: 10px;
+}
+
+.xButton .item3 {
+	transform: rotate(-45deg);
+	margin-top: 3px;
+	width: 30px;
+}
+
+.xButton:hover .item1,
+.xButton:hover .item3 {
+	background: red;
+}
+
+.navButton {
+	width: 35px;
+	height: 35px;
+	position: fixed;
+	top: 2%;
+	right: 4%;
+	z-index: 5;
+    display: none;
+}
+
+.lines {
+	display: grid;
+	grid-template-columns: repeat(1, 35px);
+	grid-template-rows: repeat(3, 4px);
+	gap: 4px;
+}
+
+.nav_active {
+	/* display: block !important; */
+	top: 0;
+	right: 0%;
+	transition: 0.4s;
 }
 
 @media  screen and (max-width: 850px) {
+    .navButton{
+        display: block;
+    }
     .nav{
-        display: none;
+        height: 100%;
+        width: 70%;
+        position: fixed;
+        right: 100%;
+    }
+    .nav ul{
+        display: block;
+        position: relative;
+        top: -20%;
     }
 }

@@ -126,7 +126,7 @@ left: -6px;
 
 .desktop-title button, .mobile-title button{
   background: none;
-  border: 2px solid silver;
+  border: 2px solid rgb(128,0,0);
   color: silver;
   padding: 10px 40px;
   font-size: 30px;
@@ -145,6 +145,7 @@ left: -6px;
 .desktop-title button:hover, .mobile-title button:hover{
 background: silver;
 color: black;
+border: 2px solid silver;
 }
 
 
