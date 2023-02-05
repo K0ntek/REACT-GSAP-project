@@ -9,24 +9,30 @@ const Navbar =()=>{
             contact.scrollIntoView({behavior: 'smooth'});
         }
 
-        const [active, setActive] = useState("nav");
+        const [active, setActive] = useState("nav__menu");
         const [icon, setIcon] = useState("nav__toggler");
         const navToggle = () => {
-            active === 'nav' ? setActive('nav nav_active'): setActive('nav')
-            icon === 'nav__toggler' ?  setIcon("nav__toggler toggle"): setIcon("nav__toggler");
+          if (active === "nav__menu") {
+            setActive("nav__menu nav__active");
+          } else setActive("nav__menu");
+      
+          // Icon Toggler
+          if (icon === "nav__toggler") {
+            setIcon("nav__toggler toggle");
+          } else setIcon("nav__toggler");
         };
 
     return(
-        <div className={active}>
-            <div onClick={navToggle} className="navButton">
-				<div className="lines">
+
+              <nav className="nav">
+                <div onClick={navToggle} className={icon}>
+				<div>
 					<div className="line item1" id="line"></div>
 					<div className="line item2" id="line"></div>
 					<div className="line item3" id="line"></div>
 				</div>
 			</div>
-
-            <ul>
+                <ul className={active}>
                 <li>
 						<Link to={"/"}>STRONA GŁÓWNA</Link>
 					</li>
@@ -41,7 +47,7 @@ const Navbar =()=>{
 					</li>
 					<li id="contactBtn" onClick={scroller}><Link style={{color: "rgb(128, 0, 0)"}}>KONTAKT</Link></li>
             </ul>
-        </div>
+              </nav>
     )
 }
 

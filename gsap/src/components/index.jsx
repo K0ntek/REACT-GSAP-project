@@ -4,8 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { bootstrap } from "bootstrap";
 
-// import bgVideo from '../videos/bgVideo.mp4'
-import bgVideo from '../videos/audi.webm'
+import bgVideo from '../videos/bgVideo.mp4'
 
 const Index =()=>{
 
@@ -40,7 +39,7 @@ const Index =()=>{
             <div className="row">
             <div className="col-12">
             <div className="video-bg">
-                <video loop autoPlay muted id="bg-video" className="video" style={{width:'100%'}}>
+                <video loop autoPlay muted id="bg-video" className="video">
                     <source src={bgVideo} type="video/mp4"/>
                 </video>
                 <div className="iContent col-12">
