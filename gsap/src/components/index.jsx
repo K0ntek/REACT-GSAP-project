@@ -4,7 +4,8 @@ import { ScrollTrigger } from "gsap/all";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { bootstrap } from "bootstrap";
 
-import bgVideo from '../videos/bgVideo.mp4'
+// import bgVideo from '../videos/bgVideo.mp4'
+import bgVideo from "../videos/audi.webm"
 
 const Index =()=>{
 

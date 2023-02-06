@@ -6,7 +6,6 @@ import { bootstrap } from "bootstrap";
 import { SplitText } from "gsap/all";
 
 //COMPONENTS
-import Gallery from "./carousel";
 import Form from "./form";
 import PageStuff from "./PageStuff";
 
@@ -14,8 +13,8 @@ import PageStuff from "./PageStuff";
 import interior from '../images/bmw/interior.jpg'
 import engine from "../images/bmw/engine.jpg"
 import back from "../images/bmw/back.jpg"
-import bgVideo from "../videos/bmw.webm"
-
+// import bgVideo from "../videos/bmw.webm"
+import bgVideo from "../videos/audi.webm"
 
 const Audi =()=>{
     const content=[

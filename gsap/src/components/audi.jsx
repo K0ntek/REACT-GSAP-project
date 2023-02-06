@@ -6,7 +6,6 @@ import { bootstrap } from "bootstrap";
 import { SplitText } from "gsap/all";
 
 //COMPONENTS
-import Gallery from "./carousel";
 import Form from "./form";
 import PageStuff from "./PageStuff";
 

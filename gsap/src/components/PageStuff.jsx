@@ -10,12 +10,12 @@ const PageStuff = ({content, images, text, background}) => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo('.nav,.buttons', {y:'-100%', opacity:0}, {y:0, opacity:1, duration:.5, stagger:.2})
     gsap.fromTo('.title', {x:'100%', opacity:0}, {x:0, opacity:1, duration:1})
-    gsap.fromTo('.contentLine, .contentText ', {y:'100%', opacity:0}, {y:0, opacity:1, duration:1, stagger:.2, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 90%'}})
-    gsap.fromTo('.circle', {y:'50px', opacity:.7, boxShadow:'none'}, {y:0, opacity:1, duration:1, delay:1, stagger:.2, boxShadow:'0px 0px 20px 0px rgb(255, 136, 0)'})
-    gsap.fromTo('.specsContent', {y:'100px', opacity:0}, {y:0, opacity:1, duration:1, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 60%'}})
-    gsap.fromTo('.specsImage', {x:'300px', opacity:0}, {x:0, opacity:1, duration:1, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 60%'}})
-    gsap.fromTo('.interiorContent', {y:'100px', opacity:0}, {y:0, opacity:1, duration:1, ease: 'easeInOut',scrollTrigger:{trigger:'.interiorContent ', start:'top 80%'}})
-    gsap.fromTo('.interiorImage', {x:'-300px', opacity:0}, {x:0, opacity:1, duration:1, ease: 'easeInOut',scrollTrigger:{trigger:'.interiorContent ', start:'top 80%'}})
+    gsap.fromTo('.contentLine, .contentText ', {y:'100%', opacity:0}, {y:0, opacity:1, duration:.7, stagger:.2, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 90%'}})
+    gsap.fromTo('.circle', {y:'50px', opacity:.7, boxShadow:'none'}, {y:0, opacity:1, duration:.7, delay:.8, stagger:.2, boxShadow:'0px 0px 20px 0px rgb(255, 136, 0)'})
+    gsap.fromTo('.specsContent', {y:'100px', opacity:0}, {y:0, opacity:1, duration:.7, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 60%'}})
+    gsap.fromTo('.specsImage', {x:'300px', opacity:0}, {x:0, opacity:1, duration:.7, ease: 'easeInOut',scrollTrigger:{trigger:'.contentLine, .contentText ', start:'top 60%'}})
+    gsap.fromTo('.interiorContent', {y:'100px', opacity:0}, {y:0, opacity:1, duration:.7, ease: 'easeInOut',scrollTrigger:{trigger:'.interiorContent ', start:'top 80%'}})
+    gsap.fromTo('.interiorImage', {x:'-300px', opacity:0}, {x:0, opacity:1, duration:.7, ease: 'easeInOut',scrollTrigger:{trigger:'.interiorContent ', start:'top 80%'}})
 
   },[])
 

@@ -18,6 +18,9 @@ import "./styles/navbar.css"
 import "./styles/footer.css"
 import "./styles/index.css"
 
+//FONTELLO
+import "./fontello/css/fontello.css"
+
 document.title = "Projekt"
 
 
